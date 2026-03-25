@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - GAB SURVEY CONSULT</title>
+    <link rel="stylesheet" href="GAB.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="copy.png" alt="GAB Survey Consult Logo" class="logo-img">
+                <span>GAB SURVEY CONSULT</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="GAB.html#home">Home</a></li>
+                <li><a href="GAB.html#services">Services</a></li>
+                <li><a href="GAB.html#about">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="GAB.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Showcasing our completed projects and successful land surveys</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects -->
+    <section class="portfolio">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item">
+                    <video src="v1.mp4" class="portfolio-image" muted loop></video>
+                </div>
+
+                <div class="portfolio-item">
+                    <video src="v2.mp4" class="portfolio-image" muted loop></video>
+                </div>
+
+                <div class="portfolio-item">
+                    <video src="v3.mp4" class="portfolio-image" muted loop></video>
+                </div>
+
+                <div class="portfolio-item">
+                    <video src="v4.mp4" class="portfolio-image" muted loop></video>
+                </div>
+
+                <div class="portfolio-item">
+                    <video src="v5.mp4" class="portfolio-image" muted loop></video>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <h2>Our Track Record</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>150+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-card">
+                    <h3>3+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Accuracy Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 GAB SURVEY CONSULT. All rights reserved. Professional Land Services.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Video hover functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            portfolioItems.forEach(item => {
+                const video = item.querySelector('video');
+                
+                item.addEventListener('mouseenter', function() {
+                    video.play();
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    video.pause();
+                    video.currentTime = 0; // Reset to beginning
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
